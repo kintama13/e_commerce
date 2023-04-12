@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <!--CSS-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Selamat datang</title>
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    </head>
+
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a href="#" class="logo">NIME<span>shop</span></a>
+                <div class="menu-wrapper">
+                    <div class="menuClose bx bx-x"></div>
+                    <div class="menu">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">Category</a>
+                    </div>
+                    <div class="icons">
+                        <i class='bx bx-search-alt icon'></i>
+                        <i class='bx bxs-cart-download icon'></i>
+                        <i class='bx bx-user-circle'></i>
+                    </div>
+                </div>
+                <div class="menuOpen bx bx-grid-alt"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Home start-->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content-left">
+                <h1 class="heading">semua akan wibu dalam waktunya</h1>
+                <p class="subheading">menyediakan semua perlengkapoan untuk menjadi wibu sejati</p>
+                <div class="btn-home">
+                    <a href="#" class="btn-explore">eksplor sekarang</a>
+                    <a href="#" class="btn-learn">pelajari lebih lanjut</a>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="swiper mySwiperHome">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="image/foto dua.webp" alt=""/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/foto satu.jpg" alt=""/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/foto tiga.webp" alt=""/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="image/gundam.jpg" alt=""/>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home end-->
+
+    <!--panel start-->
+    <div class="panel">
+        <div class="container">
+            <div class="item">
+                <div class="icon">
+                    <i class='bx bx-package'></i>
+                </div>
+                <div class="text-panel">
+                    <h5 class="title">Gratis Ongkir</h5>
+                    <p class="subtitle">gratis pengiriman ke seluruh indonesia</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class='bx bxs-bank' ></i>
+                </div>
+                <div class="text-panel">
+                    <h5 class="title">Pembayaran mudah</h5>
+                    <p class="subtitle">tidak perlu mikir untuk metode pembayaran</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--panel end-->
+
+    <!--Service start-->
+    <section class="service" id="service">
+        <div class="container">
+            <div class="row1">
+                <p class="label">apa aja yang kita jual?</p>
+                <h3 class="title">kami menjual produk anime yang berkualitas</h3>
+            </div>
+            <div class="row2">
+                <div class="img-box">
+                    <div class="detail">
+                        <a href="#">Attire</a>
+                    </div>
+                    <img src="image/baju 2.jpg" alt="">
+                </div>
+                <div class="img-box">
+                    <div class="detail">
+                        <a href="#">Figure</a>
+                    </div>
+                    <img src="image/figure 2.webp" alt="">
+                </div>
+                <div class="img-box">
+                    <div class="detail">
+                        <a href="#">Accesories</a>
+                    </div>
+                    <img src="image/aksesoris 2.jpg" alt="">
+                </div>
+                <div class="img-box">
+                    <div class="detail">
+                        <a href="#">Gunpla</a>
+                    </div>
+                    <img src="image/gundam 2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service end-->
+
+
+    <!--Banner start-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-left">
+                <a href="#" class="img-box">
+                    <img src="image/banner 1.png" alt="">
+                </a>
+            </div>
+            <div class="banner-right">
+                <a href="#" class="img-box">
+                    <img src="image/banner 2.png" alt="">
+                </a>
+                <a href="#" class="img-box">
+                    <img src="image/banner 3.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Banner end-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(() =>{
+            $('.menuOpen').click(() =>{
+                $('.menu-wrapper').addClass('active')
+            })
+        
+            $('.menuClose').click(()=>{
+                $('.menu-wrapper').removeClass('active')
+            })
+        })
+
+        $(document).scroll(()=>{
+            $('.navbar').toggleClass('active', $(this).scrollTop() > $('.navbar').height())
+        })
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiperHome", {
+            slidesperView : "auto",
+            centeredSlides : true,
+     
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            autoplay:{
+              delay : 2000
+          }
+      });
+    </script>
+</body>
+
+</html>
